@@ -59,7 +59,7 @@ routes.post('/notes', (req, res) => {
 });
 
 //delete route
-routes.delete('/notes', (req, res) => {
+routes.delete('/notes/:id', (req, res) => {
     fs.readFile(`./db/db.json`, "utf-8", (err, data) => {
       console.log("we're in the delete");
       if (err) {
@@ -67,25 +67,24 @@ routes.delete('/notes', (req, res) => {
         console.log(err);
         return;
       } else {
-        //if user clicks on the trash can
-        const noteID = JSON.parse()
-        const userID = JSON.parse(data).id;
-        const stringifyID = JSON.stringify(userID);
-        if (userID === noteID){
-        //then delete note based on id
-        console.log("userID === noteID");
-        } else {
-            console.log("The ID variables do not equal each other.");
-            res.status(500).json('Error in ID variables not equal to each other.');
+        const notes = JSON.parse(data);
+        const userID = req.params.id;
+        for(let i = 0; i < notes.length; i++) {
+            if (userID === notes[i].id) {
+                // check if id note is equal to chosen id
+                console.log("userID === noteID");
+                notes.splice(i,1);
+            }
         }
 
         //then overwrite ds file to not include the note user selected
+        const stringifyID = JSON.stringify(notes);
         fs.writeFile('./db/db.json', stringifyID, (err, data) => {
             if(err) {
                 console.log("Error in writing file.");
                 console.log(err);
             } else {
-                res.json(stringifyData);
+                res.json(stringifyID);
             }
         });
         }

@@ -5,7 +5,7 @@
 - The motivation is to learn to create a note taking app using Express get and post methods.
 - The project was built to create a note taking app.
 - The problem this project solves is greater understanding of the use cases of Express.
-- I learned how to work note taker app the communicate the back end with the front end of the project.
+- I learned how to work note taker app to communicate the back end with the front end of the project.
 
 ## Table of Contents (Optional)
 
@@ -29,17 +29,12 @@ https://github.com/harleysherman/noteTaker.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-Here's the link to the video below:
-[Video Link](https://drive.google.com/file/d/1u5lhhDJqgo9G-cqjxq8IiKUi3uVpbUX5/view)
-
 Here's the GitHub link where the repo lives:
-[svgLogoCreator](https://github.com/harleysherman/noteTaker)
+[noteTaker](https://github.com/harleysherman/noteTaker)
 
 ## Credits
 
-I want to thank Leif for helping me understand how to the post method works. I want to thank Charles for helping me setup this project on a good foundation.
+I want to thank Leif for helping me understand how to the post method works and helping me better understand the delete method. I want to thank Charles for helping me setup this project on a good foundation.
 
 ## License
 
@@ -49,7 +44,7 @@ The license used in this project is MIT License.
 
 ## Badges
 
-![express](https://img.shields.io/badge/express-testing-blue)
+![express](https://img.shields.io/badge/express-javascript-blue)
 ![JSON](https://img.shields.io/badge/JSON-package-green)
 ![fs](https://img.shields.io/badge/fs-package-green)
 
@@ -66,4 +61,4 @@ For any violations of this project, contact me hello@harleysherman.com.
 
 ## Tests
 
-1. 
+1. Press on the trash can on any of the tasks to delete them.
