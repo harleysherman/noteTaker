@@ -31,3 +31,6 @@ app.get('*', (req, res) =>
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT}`)
 );
+
+//FOR HEROKU UPDATE -- in terminal
+//brew tap heroku/brew && brew install heroku
