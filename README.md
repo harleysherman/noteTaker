@@ -32,6 +32,9 @@ https://github.com/harleysherman/noteTaker.
 Here's the GitHub link where the repo lives:
 [noteTaker](https://github.com/harleysherman/noteTaker)
 
+Here's the Heroku link where the repo lives:
+[heroku](https://github.com/harleysherman/noteTaker)
+
 ## Credits
 
 I want to thank Leif for helping me understand how to the post method works and helping me better understand the delete method. I want to thank Charles for helping me setup this project on a good foundation.
